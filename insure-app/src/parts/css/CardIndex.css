@@ -16,11 +16,6 @@
     margin-bottom: 60px;
 }
 
-.planosView{
-    scroll-behavior: smooth;
-    /* transition: 1s; */
-}
-
-.planosView:target {
-    scroll-margin-top: .8em;
+.planCard-text{
+    color: black;
 }

@@ -7,7 +7,7 @@ const Nav = () => {
         <div class="logo"></div>
         <div class="nav-items"> 
             <ul>
-                <li> <a href='#'> Home </a> </li>
+                <li> <a href='/'> Home </a> </li>
                 <li> <a class="plano" href='#planosView'>Planos </a></li>
             </ul>
         </div>

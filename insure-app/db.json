@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "planos":[
+    {   
+        "id":1,
+        "nome": "Produto 1",
+        "preco": 10.00,
+        "descricao": "Descrição do produto 1"
+    },
+    {   
+        "id":2,
+        "nome": "Produto 2",
+        "preco": 20.00,
+        "descricao": "Descrição do produto 2"
+    },
+    {
+        "id":3,
+        "nome": "Produto 3",
+        "preco": 30.00,
+        "descricao": "Descrição do produto 3"
+    }
+],
+  "profile": {
+    "name": "typicode"
+  }
+}
