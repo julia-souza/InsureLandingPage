@@ -1,0 +1,58 @@
+.footer{
+    background-color: hsl(256, 26%, 20%);
+    background-image: url("../../img/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    height: 300px;
+    width: 100%;
+    padding: 30px;
+}
+
+.footer-logo{
+    background-image: url("../../img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    filter: invert(100%);
+
+    height: 50px;
+    width: 100px;
+    margin-left: 100px;
+}
+
+.hr-footer{
+    margin: auto;
+    width: 80%;
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    height: 1px;
+}
+
+.footer-content ul li{
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin: 20px;
+   
+}
+
+.footer-content ul li a{
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footer-content a:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+    transition: 1s;
+}
+    
+.footer > p{
+    color: hsl(0, 0%, 98%);
+    position: relative;
+    top: 70px;
+    font-size: 14px;
+}

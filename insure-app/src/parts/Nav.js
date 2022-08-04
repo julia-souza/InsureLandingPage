@@ -8,6 +8,7 @@ const Nav = () => {
         <div class="nav-items"> 
             <ul>
                 <li> <a href='/'> Home </a> </li>
+                <li> <a href='#cadastro'> Cadastre-se</a> </li>
                 <li> <a class="plano" href='#planosView'>Planos </a></li>
             </ul>
         </div>

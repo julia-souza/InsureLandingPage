@@ -1,0 +1,37 @@
+.cadastro{
+    width: 900px;
+    margin: auto;
+}
+
+.cadastro h1{
+    padding: 10px;
+}
+
+label{
+    font-size: 20px;
+    color: hsl(256, 26%, 20%);
+    display: block;
+    padding: 5px;
+}
+
+.inpt{
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    margin: 5px;
+    background-color: hsla(0, 0%, 91%, 0.589);
+}
+
+.envia{
+    width: 200px;
+    padding: 10px;
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+}
+
+.envia:hover{
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+}
