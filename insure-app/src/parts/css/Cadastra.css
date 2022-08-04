@@ -29,6 +29,7 @@ label{
     background-color: hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
     border: none;
+    margin-bottom: 20px;
 }
 
 .envia:hover{

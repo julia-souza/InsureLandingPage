@@ -14,7 +14,7 @@ const Footer = () => {
         </ul>
       </div>
       <p>© Insure</p>
-      <p>Desenvolvido por Júlia</p>
+      {/* <p>Desenvolvido por Júlia</p> */}
     </div>
   );
 };

@@ -21,5 +21,26 @@
     "nome": "Plano Único",
     "valor": "R$ 250.00",
     "descricao": "Pensando mais a longo prazo, a consolidação das estruturas cumpre um papel essencial na formulação dos relacionamentos verticais entre as hierarquias. Não obstante, o acompanhamento das preferências de consumo assume importantes posições no estabelecimento do fluxo de informações."
-  }
+  },
+  "cadastro": [
+    {
+      "id": 1,
+      "nome": "João",
+      "email": "joao@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "email": "maria@gmail.com"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ]
 }

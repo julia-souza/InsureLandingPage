@@ -1,41 +1,65 @@
-// import React from 'react'
-// import './css/Cadastra.css'
+import React from "react";
+import "./css/Cadastra.css";
 
-// const Cadastra = () => {
-//     createList() {
-//         fetch("http://localhost:3002/posts", {
-//           method: "POST",
-//           headers: {
-//             "Content-Type": "application/json"
-//           },
-//           body: JSON.stringify(this.state.singledata)
-//         }).then(
-//           this.setState({
-//             singledata: {
-//               title: "",
-//               author: ""
-//             }
-//           })
-//         );
-//     }
+import { useState } from "react";
 
-//     return (
-//         <form className='cadastro' onSubmit={this.handleSubmit} >
-//             {/* onSubmit={this.handleSubmit} */}
-//             <h1>newsletter</h1>
-//         <label>
-//           Nome:
-//           <input className="inpt" type="text" value={this.state.value} onChange={this.handleChange}/>
-//           {/* value={this.state.value} onChange={this.handleChange}  */}
-//         </label>
-//         <label>
-//             E-mail:
-//             <input className="inpt" type="text" value={this.state.value} onChange={this.handleChange} />
-//           {/* value={this.state.value} onChange={this.handleChange}  */}
-//         </label>
-//         <input className="envia" type="submit" value="Enviar" />
-//       </form>
-//   );
-// }
 
-// export default Cadastra;
+const Cadastra = () => {
+  let model = {nome: '', email: ''}
+  let [form, setForm] = useState(model)
+
+  const evento = (e) =>{
+    let nome = e.target.name;
+    let valor = e.target.value;
+
+    // let email = e.target.email;
+    // let valorEmail =  e.target.value;
+    
+    // setForm({...form, [nome]: valor, [email]: valorEmail});
+
+    setForm({...form, [nome]: valor});
+
+  } 
+    const submit = (e) =>{
+        e.preventDefault();
+        
+        let envio = {
+            nome: form.nome,
+            email: form.email
+        };
+
+        console.log(envio);
+        
+
+        fetch("http://localhost:8000/cadastro", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(setForm(envio))
+    }).then(() => {
+        alert("Cadastrado com sucesso!");
+    })
+    }
+
+
+  return (
+    <form id="cadastro" className="cadastro">
+      <h1>newsletter</h1>
+      <label>
+        Nome:
+        <input id="nome" name="nome" className="inpt" type="text" onChange={evento} />
+      </label>
+      <label>
+        E-mail:
+        <input id="email" name="email" className="inpt" type="text" onChange={evento} />
+      </label>
+
+        {/* <p>{form.nome}</p> */}
+
+      <button className="envia" type="button" value="Enviar" onClick={submit}>
+        Salvar
+      </button>
+    </form>
+  );
+};
+
+export default Cadastra;

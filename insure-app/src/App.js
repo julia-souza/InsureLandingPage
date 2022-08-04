@@ -11,7 +11,7 @@ function App() {
         <Nav />
         <Banner />
         <CardIndex />
-        {/* <Cadastra /> */}
+        <Cadastra />
         <Footer />
     </div>
   );
