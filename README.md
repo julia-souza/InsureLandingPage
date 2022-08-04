@@ -21,7 +21,6 @@ Para consumir dados, é utilizado o Json Server (json-server). Você pode execut
 
 Para executar o json-server, neste projeto, utilize: 
 
-### `npm run backend`
-### `npm run backfront`  
+### `npx json-server --watch db.json --port 8000` 
 
-Todos os comandos são configurados no arquivo `package.json` 
+Lembre-se de executar o json-server e a aplicação em terminais distintos! 😜  

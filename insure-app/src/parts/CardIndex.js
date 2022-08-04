@@ -3,25 +3,34 @@ import { useState, useEffect} from 'react';
 
 import "./css/CardIndex.css"
 
-const url = "http://localhost:3001/planos";
+// const url = "http://localhost:8000/planos";
 
 const CardIndex = () => {
-    const [plano, setPlano] = useState([]);
+    const [plano, setPlano] = useState([
+        // {
+        //     "id": 1,
+        //     "nome": "Plano 1",
+        //     "preco": "R$ 100,00",
+        //     "descricao": "Descrição do plano 1"
+        // }
+    ]);
 
     useEffect(() => {
-        fetch('../../public/db.json',{
-            headers: {
-                Accept: 'application/json'
-            }
-        }).then(res => res.json())
-          .then(res =>setPlano(res.plano))
+        fetch("http://localhost:8000/planos")
+            .then(res => {
+                return res.json();
+            })
+            .then(data =>{
+                // console.log(data);
+                setPlano(data);
+            })
     }, []);
     
-    return <div id="planosView" class="planCar">
-        <div class="planCard-img" />
-        <div class="planCard-text">
+    return <div id="planosView" className="planCar">
+        <div className="planCard-img" />
+        <div className="planCard-text">
             <h1>{plano.nome}</h1>
-            <p>{plano.preco}</p>
+            <p className="value">{plano.valor}</p>
             <p>{plano.descricao}</p>	
         </div>
     </div>;
