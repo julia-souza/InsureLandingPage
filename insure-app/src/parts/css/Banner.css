@@ -1,5 +1,5 @@
 .banner{
-    width: 100%;
+    width: auto;
     background-color: hsl(256, 26%, 20%);
     color: aliceblue;
     display: flex;
@@ -39,8 +39,6 @@
 .banner-img-right{
     background-image: url("../../img/bg-pattern-intro-right-desktop.svg");
     background-position: top right;
-    
-    
 }
 
 .banner-img-right-img{

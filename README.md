@@ -7,6 +7,7 @@
 
 Neste projeto você pode executar:
 
+###  `npm install axios`
 ### `npm start`
 ### `npm run build`
 
