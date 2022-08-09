@@ -5,20 +5,16 @@
 ## Trabalho dedicado à entrega final para a disciplina de Desenvolvimento Web
 
 
-Neste projeto você pode executar:
-
+Neste projeto você pode executar para criar a aplicação do zero:
+### `npx create-react-app insure-app` 
 ###  `npm install axios`
-### `npm start`
-### `npm run build`
-
-Para as rotas, use:
-### `npm install react-router-dom`
 
 Para consumir dados, é utilizado o Json Server (json-server). Você pode executar:
-
 ### `npm install -g json-server` || `npm i json-server`
-
 ### `json-server --watch db.json`
+
+Caso esteja utilizando o projeto em seu estado atual, execute:
+### `npm start`
 
 Para executar o json-server, neste projeto, utilize: 
 
